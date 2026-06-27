@@ -25,6 +25,6 @@ async def get_current_user(
     
     user = await auth_service.get_user_by_id(int(payload["sub"]))
     if user is None:
-        raise HTTPException(401, "пользователь не найден")
+        raise HTTPException(401, "Пользователь не найден")
     
     return user

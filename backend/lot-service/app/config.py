@@ -11,4 +11,6 @@ class Settings(BaseSettings):
     jwt_secret: str
     jwt_algorithm: str = "HS256"
 
+    auction_duration_time: int = 5
+
 settings = Settings()

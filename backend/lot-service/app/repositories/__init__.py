@@ -1,0 +1,1 @@
+from .lot_repository import LotRepository
