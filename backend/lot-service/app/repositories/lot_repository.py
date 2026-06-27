@@ -27,4 +27,4 @@ class LotRepository:
     
     async def get_all(self) -> list[Lot] | None:
         result = await self.db.execute(select(Lot))
-        return list(result.scalars.all())
+        return list(result.scalars().all())
